@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+  background-color: #dde1e7;
+}
+
+.keyboard_section{
+  background-color: #dde1e7;
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.3);
+  padding: 25px;
+
+}
+
+
+.row{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.row input{
+  border: none;
+  background-color: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.3);
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+  color: #808080;
+  border-radius: 5px;
+}
+
+.row input[value='SPACE']{
+  width: 60%;
+}
+.row input:focus{
+  color: #3498db;
+  font-size: 19px;
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94,104,121,0.3);
+}
+
+@media screen and (max-width:800px) {
+  .keyboard_section {
+
+    width: 500px;
+  }
+  .row {
+    gap: 10px;
+
+  }
+
+  .row input {
+    height: 30px;
+    min-width: 30px;
+    font-size: 12px;
+  }
+  .row input:focus{
+    color: #3498db;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:450px) {
+  .keyboard_section {
+
+    width: 400px;
+  }
+  .row input {
+    height: 20px;
+    min-width: 20px;
+    font-size: 9px;
+}
+}
